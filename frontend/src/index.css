@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  /* Numerals are set in mono and tabular everywhere so figures line up in
+     columns and read as data rather than prose. */
+  .numeric {
+    @apply font-mono tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  ::selection {
+    background: #0e4f45;
+    color: #edefef;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0e4f45;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Hairline borders instead of drop shadows: the whole surface treatment is
+     flat, so the gold match meter is the only thing that draws the eye. */
+  .card {
+    @apply border border-hairline bg-white;
+  }
+
+  .label {
+    @apply text-xs font-medium uppercase tracking-[0.08em] text-muted;
+  }
+
+  .display {
+    @apply font-display font-semibold tracking-[-0.01em] text-ink;
+  }
+}

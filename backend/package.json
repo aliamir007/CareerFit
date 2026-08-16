@@ -1,0 +1,35 @@
+{
+  "name": "fyp-ai_resume",
+  "version": "1.0.0",
+  "description": "final year project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "saad",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.8.0",
+    "bcrypt": "^6.0.0",
+    "bullmq": "^6.0.5",
+    "cloudinary": "^2.10.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "google-auth-library": "^10.9.1",
+    "ioredis": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.1",
+    "multer": "^2.2.0",
+    "nodemon": "^3.1.14",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pdf-parse": "^1.1.1",
+    "pdfreader": "^3.0.8",
+    "resend": "^6.17.2",
+    "tesseract.js": "^7.0.0"
+  }
+}
